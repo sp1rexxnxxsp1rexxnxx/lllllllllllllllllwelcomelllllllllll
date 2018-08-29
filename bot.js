@@ -1,7 +1,9 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const Canvas = require('canvas');
+const jimp = require('jimp');
 client.on('guildMemberAdd',async member => {
-  const Canvas = require('canvas');
-  const jimp = require('jimp');
-  const w = ['./w1.png'];
+const w = ['./w1.png'];
         let Image = Canvas.Image,
             canvas = new Canvas(800, 300),
             ctx = canvas.getContext('2d');
